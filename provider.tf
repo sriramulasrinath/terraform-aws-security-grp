@@ -8,7 +8,7 @@ terraform {
   }
   backend "s3" {
     bucket = "devprj-bucket"
-    key    = "expense-sg-eks-dev"
+    key    = "expense-sg-module-eks-dev"
     region = "us-east-1"
     dynamodb_table = "devdyno"
   }
