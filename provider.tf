@@ -3,12 +3,12 @@ terraform {
   required_providers {
     aws = {
       source = "hashicorp/aws"
-      version = "5.58.0"
+      version = "5.49.0"
     }
   }
   backend "s3" {
     bucket = "devprj-bucket"
-    key    = "expense-sg-module-eks-dev"
+    key    = "expense-sgroot-eks-dev"
     region = "us-east-1"
     dynamodb_table = "devdyno"
   }
